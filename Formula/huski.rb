@@ -5,21 +5,21 @@
 class Huski < Formula
   desc "TUI ASCII diagram editor — object-based, Vim modal, Catppuccin theme"
   homepage "https://github.com/artw/huski"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/artw/huski/releases/download/v0.1.0/huski-0.1.0-darwin-amd64.tar.xz"
-      sha256 "0788d7a1088821e46d1b4ddd3e39d98d28649e7a1325e4c4659c8e81dc933239"
+      url "https://github.com/artw/huski/releases/download/v0.1.1/huski-0.1.1-darwin-amd64.tar.xz"
+      sha256 "52292db7a9228b5cc98a8df30472c247dfc45bb6b2045943fc21941dbcf4ac9d"
 
       define_method(:install) do
         bin.install "huski"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/artw/huski/releases/download/v0.1.0/huski-0.1.0-darwin-arm64.tar.xz"
-      sha256 "84b5a4a52baa4b94156cd3db6a3072b35641c7c42a78f2752e410706ab9e2810"
+      url "https://github.com/artw/huski/releases/download/v0.1.1/huski-0.1.1-darwin-arm64.tar.xz"
+      sha256 "767b77e130474748f5b443ed16f33a28843aab98f476f8c6263f9d01503572e6"
 
       define_method(:install) do
         bin.install "huski"
@@ -29,15 +29,15 @@ class Huski < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artw/huski/releases/download/v0.1.0/huski-0.1.0-linux-amd64.tar.xz"
-      sha256 "c5e89bbb0fd81594523c5cf71a7907dfa235c3225f3861bf50f429df785f117e"
+      url "https://github.com/artw/huski/releases/download/v0.1.1/huski-0.1.1-linux-amd64.tar.xz"
+      sha256 "d84fe04bb35902b5ef6ee34f699f8e512174ac4934a48a2c889004a29fb4ac2c"
       define_method(:install) do
         bin.install "huski"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artw/huski/releases/download/v0.1.0/huski-0.1.0-linux-arm64.tar.xz"
-      sha256 "c14e971f828ba168c4a2a6347b4fc3794d2ac28323e0bab0e6d6d390f6cc2b99"
+      url "https://github.com/artw/huski/releases/download/v0.1.1/huski-0.1.1-linux-arm64.tar.xz"
+      sha256 "9a621825048eff8ff6d9c054d41473d0ae853b35b9780f39d0c000ae3e89f863"
       define_method(:install) do
         bin.install "huski"
       end
